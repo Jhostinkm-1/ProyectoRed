@@ -46,24 +46,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inicio.cs">
+    <Compile Include="WFT\AgregarInventario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicio.Designer.cs">
+    <Compile Include="WFT\AgregarInventario.Designer.cs">
+      <DependentUpon>AgregarInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WFT\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WFT\Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="WFT\InventarioVisio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="WFT\InventarioVisio.Designer.cs">
+      <DependentUpon>InventarioVisio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WFT\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WFT\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Inicio.resx">
+    <Compile Include="WFT\RegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WFT\RegistrarUsuario.Designer.cs">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WFT\VentanaEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WFT\VentanaEliminar.Designer.cs">
+      <DependentUpon>VentanaEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WFT\VentanaModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WFT\VentanaModificar.Designer.cs">
+      <DependentUpon>VentanaModificar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WFT\AgregarInventario.resx">
+      <DependentUpon>AgregarInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFT\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="WFT\InventarioVisio.resx">
+      <DependentUpon>InventarioVisio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFT\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -76,6 +112,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WFT\RegistrarUsuario.resx">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFT\VentanaEliminar.resx">
+      <DependentUpon>VentanaEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFT\VentanaModificar.resx">
+      <DependentUpon>VentanaModificar.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
