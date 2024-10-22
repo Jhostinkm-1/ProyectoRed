@@ -66,5 +66,10 @@ namespace InventarioRedes
            registrarUsuarioWFT.Show();
            this.Hide();
         }
+
+        private void AgregarInventario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

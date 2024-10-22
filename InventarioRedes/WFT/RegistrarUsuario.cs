@@ -56,5 +56,33 @@ namespace InventarioRedes
                 this.WindowState = FormWindowState.Normal;
             }
         }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            Inicio inicioWFT = new Inicio();
+            inicioWFT.Show();
+            this.Hide();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            AgregarInventario agregarInventarioWFT = new AgregarInventario();
+            agregarInventarioWFT.Show();
+            this.Hide();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            VentanaModificar ventanaModificarWFT = new VentanaModificar();
+            ventanaModificarWFT.Show();
+            this.Hide();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            VentanaEliminar ventanaEliminarWFT = new VentanaEliminar();
+            ventanaEliminarWFT.Show();
+            this.Hide();
+        }
     }
 }
