@@ -69,6 +69,20 @@ namespace InventarioRedes
 
         private void AgregarInventario_Load(object sender, EventArgs e)
         {
+            int radius = 20;
+            System.Drawing.Drawing2D.GraphicsPath buttonPath = new System.Drawing.Drawing2D.GraphicsPath();
+            buttonPath.StartFigure();
+            buttonPath.AddArc(new Rectangle(0, 0, radius, radius), 180, 90);
+            buttonPath.AddArc(new Rectangle(btnAgregar.Width - radius, 0, radius, radius), 270, 90);
+            buttonPath.AddArc(new Rectangle(btnAgregar.Width - radius, btnAgregar.Height - radius, radius, radius), 0, 90);
+            buttonPath.AddArc(new Rectangle(0, btnAgregar.Height - radius, radius, radius), 90, 90);
+            buttonPath.CloseAllFigures();
+            btnAgregar.Region = new Region(buttonPath);
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -15,15 +15,6 @@ namespace InventarioRedes
         public Inicio()
         {
             InitializeComponent();
-            this.Load += new System.EventHandler(this.Inicio_Load);
-        }
-        private void OpenForm(Form formToOpen)
-        {
-            Point currentLocation = this.Location;
-            formToOpen.StartPosition = FormStartPosition.Manual;
-            formToOpen.Location = currentLocation;
-            formToOpen.Show();
-            this.Hide();
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
@@ -143,7 +134,7 @@ namespace InventarioRedes
         {
             AgregarInventario agregarInventarioWFT = new AgregarInventario();
             agregarInventarioWFT.Show();
-            OpenForm(new RegistrarUsuario());
+           
             this.Hide();
         }
 
@@ -151,7 +142,7 @@ namespace InventarioRedes
         {
             VentanaModificar ventanaModificarWFT= new VentanaModificar();
             ventanaModificarWFT.Show();
-            OpenForm(new RegistrarUsuario());
+            
             this.Hide();
         }
 
@@ -169,7 +160,7 @@ namespace InventarioRedes
         {
             VentanaEliminar ventanaEliminarWFT = new VentanaEliminar();
             ventanaEliminarWFT.Show();
-            OpenForm(new RegistrarUsuario());
+            
             this.Hide();
         }
 
@@ -177,7 +168,7 @@ namespace InventarioRedes
         {
             RegistrarUsuario registrarUsuarioForm = new RegistrarUsuario();
             registrarUsuarioForm.Show();
-            OpenForm(new RegistrarUsuario());
+            
             this.Hide();
         }
 
